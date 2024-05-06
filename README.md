@@ -6,7 +6,7 @@ Securely erase all connected drives as quickly as possible
 Simply running `panic` will trigger a wipe of all devices. A basic wipe consists of 4 steps:
 
 - Wipe the headers of all LUKS devices
-	- For usres running HDDs, this step alone should be enough to render the data irrecoverable
+	- For users running HDDs, this step alone should be enough to render the data irrecoverable
 - Secure discard all data on all storage devices
 	- Only some SSDs support secure discard
 - Normal (insecure) discard on all storage devices
