@@ -30,10 +30,10 @@ The panic handler has multiple modes:
 
 #### Wipe modes
 
-- Normal (default)
-	- The default wipe behavior. This wipe mode should be effective on the widest range of drives
-- OPAL (*untested*)
-	- This wipe mode is specified by running `panic --erase=OPAL`. This option tells OPAL self-encrypting drives to perform a reset.
+- DISCARD (default)
+	- This wipe mode is specified by running `pannic --erase=DISCARD`, or by simply running `panic` with no options. This wipe mode should be effective on the widest range of drives
+- OPAL *(untested)*
+	- This wipe mode is specified by running `panic --erase=OPAL`. This option tells OPAL self-encrypting drives to perform a factory reset
 
 ### Installation
 
