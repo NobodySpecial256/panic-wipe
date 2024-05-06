@@ -25,7 +25,7 @@ The panic handler has multiple modes:
 	- This mode is specified by running `panic --delay <seconds>`. It's identical to a normal panic, except it waits `<seconds>` before powering off, to allow the drive more time to TRIM discarded blocks
 	- This mode is potentially more vulnerable to cold boot attacks, since contents of RAM aren't deleted until power is lost
 - Reboot
-	- This mode is specified by running `panic --reboot`. It's identical to normal panic, except it reboots the system instead of powering off, to allow the drive to TRIM discarded blocks after RAM is clearned
+	- This mode is specified by running `panic --reboot`. It's identical to normal panic, except it reboots the system instead of powering off, to allow the drive to TRIM discarded blocks after RAM is cleared
 	- This mode trusts the BIOS to zero RAM immediately on power-on. On systems which fail to do this, cold boot attacks may be possible
 
 #### Wipe modes
