@@ -11,7 +11,7 @@ Simply running `panic` will trigger a wipe of all devices. A basic wipe consists
 	- Only some SSDs support secure discard
 - Normal (insecure) discard on all storage devices
 	- This accounts for SSDs without secure discard support, but doesn't provide as strong security guarantees
-- Writes a notice to every connected storage device informing any attacker in no uncertain terms that the data has been wiped irrecoverably
+- Writes a notice to every connected storage device informing any attacker that the data has been wiped irrecoverably
 	- This should deter them from attempting to force you to unlock your drive (eg. legal threats or torture), since there's nothing to unlock
 	- *Note:* If the attacker suspects that you still have a usable backup, they might try to force you to unlock your backup instead
 
