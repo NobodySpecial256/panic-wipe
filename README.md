@@ -39,6 +39,8 @@ The panic handler has multiple modes:
 
 Optionally, after installing this script, it can be bound to a keybind. This can allow you to more quickly trigger a panic wipe. Make sure the keybind isn't something you'll accidentally trigger, since this script will irrecoverably erase ALL data on EVERY storage device it can find
 
+*Note:* To bind this script to a keybind, you must have passwordless root enabled on your system. While the script can try to elevate to root automatically, it can only ask for your password if it's running inside an interactive terminal
+
 #### Qubes Installation
 
 There are 2 ways to install this script onto a Qubes system. Both methods should work, but there may be situations where the 2nd method works better
