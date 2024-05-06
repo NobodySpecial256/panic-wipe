@@ -78,6 +78,8 @@ Simply download the script, compile it, and put it into your system's `$PATH` (I
 
 You can make sure everything is working properly by running `panic --dbg=dry-run`. This will make sure that the panic wipe is able to run successfully, without performing any destructive actions or powering off the system
 
+**Warning:** Arguments are processed in the order in which they're passed. To avoid data loss, `--dbg=dry-run` must be the _last_ argument passed. Any arguments which come later will override its behavior
+
 For extra assurance, you can test the panic wipe in a VM or on a separate system without important data. For people willing to read some C code, browsing the source will reveal more debug options, as well as alternative wipe modes with different security properties
 
 *Note: OPAL erase mode has not yet been tested*
