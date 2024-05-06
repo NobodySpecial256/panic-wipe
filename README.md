@@ -50,7 +50,7 @@ There are 2 ways to install this script onto a Qubes system. Both methods should
 - Copy this script into a trusted VM
 	- Ideally this would be a disposable which has never been connected to the network
 	- For extra security, you can use [qubes-clean](https://github.com/NobodySpecial256/qubes-clean) to copy this file into the disposable
-- (Optional, but recommended) Review `panic.c` to make ensure no malicious behavior has been added
+- (Optional, but recommended) Review `panic.c` to ensure no malicious behavior has been added
 - Compile the script
 	- (In your trusted VM) `gcc QubesIncoming/<source qube>/panic.c -o panic`
 - Copy the compiled binary into dom0
@@ -64,7 +64,7 @@ There are 2 ways to install this script onto a Qubes system. Both methods should
 	- (In a dom0 terminal) `sudo qubes-dom0-update gcc`
 - Copy this script into dom0
 	- For extra security, you can use [qubes-clean](https://github.com/NobodySpecial256/qubes-clean) to copy this file into dom0
-- (Optional, but recommended) Review `panic.c` to make ensure no malicious behavior has been added
+- (Optional, but recommended) Review `panic.c` to ensure no malicious behavior has been added
 - Compile the script
 	- (In a dom0 terminal) `gcc panic.c -o panic`
 - (Optional, but recommended) Copy or move the script to `/usr/local/bin` so that it's within `$PATH`
