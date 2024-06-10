@@ -41,7 +41,7 @@ char *construct_erase_luks(const char *v){
 }
 char *construct_erase_opal(const char *v){
 	/* `cryptsetup`'s `-q` suppresses confirmation questions, which is what we want for our non-interactive panic script */
-	return construct_cmd("cryptsetup erase --hw-opal-factory-reset", v);
+	return construct_cmd("cryptsetup erase --hw-opal-factory-reset -q", v);
 }
 void erase_luks(const char *v, mode_t mode){
 	char *cmd = construct_erase_luks(v);
